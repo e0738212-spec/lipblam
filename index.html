@@ -1,57 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lip Blam Store</title>
+
+<title>Lip Blam Project - Grade 6</title>
+
 <style>
-body { font-family: Arial; margin:0; background:#f5f5f5; }
-header{background:black; color:white; padding:20px; text-align:center;}
-nav{background:#333; padding:10px; text-align:center;}
-nav a{color:white; margin:15px; text-decoration:none; font-size:18px;}
-.container{display:flex; flex-wrap:wrap; justify-content:center;}
-.product{background:white; margin:20px; padding:15px; width:250px; border-radius:10px; box-shadow:0px 0px 10px gray; text-align:center;}
-.product img{width:200px; height:200px;}
-button{background:black; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;}
-.cart{position:fixed; right:10px; top:10px; background:white; padding:15px; border-radius:10px; box-shadow:0px 0px 10px gray;}
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#6a1b9a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+header img{
+width:120px;
+border-radius:10px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#333;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* SECTION */
+
+.section{
+padding:30px;
+text-align:center;
+}
+
+/* GRID */
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* CARD */
+
+.card{
+background:white;
+margin:15px;
+padding:10px;
+width:250px;
+border-radius:12px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
 </style>
+
 </head>
+
 <body>
+
+<!-- HEADER -->
+
 <header>
-<h1>Lip Blam Store</h1>
-<p>Best lip blam Deals</p>
+
+<img src="1.jpeg">
+
+<h1>Grade 6 Lip Blam Project</h1>
+
+<p>Science + ICT Integration Activity</p>
+
 </header>
+
+<!-- NAV -->
+
 <nav>
+
 <a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#">Project</a>
+<a href="#">Gallery</a>
+
 </nav>
-<div class="cart">
-🛒 Cart: <span id="total">0</span> $
+
+<!-- ABOUT -->
+
+<div class="section">
+
+<h2>About the Project</h2>
+
+<p>
+Grade 6 students explored how to create lip balm using natural ingredients.
+This project combines Science and ICT skills where students learned about
+materials, mixing processes, and documented their work digitally.
+</p>
+
 </div>
+
+<!-- GALLERY -->
+
+<div class="section">
+
+<h2>Students Activities</h2>
+
 <div class="container">
-<div class="product">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4l1d_bPEJW3y7jLy_IaBl1D4Ho3HLYpb4fw&s">
-<h3>Laptop HP</h3>
-<p>700$</p>
-<button onclick="add(700)">Add to Cart</button>
+
+<div class="card"><img src="1.jpeg"><p>Preparing ingredients</p></div>
+<div class="card"><img src="2.jpeg"><p>Measuring materials</p></div>
+<div class="card"><img src="3.jpeg"><p>Mixing process</p></div>
+<div class="card"><img src="4.jpeg"><p>Heating phase</p></div>
+<div class="card"><img src="5.jpeg"><p>Team collaboration</p></div>
+<div class="card"><img src="6.jpeg"><p>Experiment steps</p></div>
+<div class="card"><img src="7.jpeg"><p>Hands-on activity</p></div>
+<div class="card"><img src="8.jpeg"><p>Group discussion</p></div>
+<div class="card"><img src="9.jpeg"><p>Applying ICT</p></div>
+<div class="card"><img src="10.jpeg"><p>Observation</p></div>
+<div class="card"><img src="11.jpeg"><p>Student engagement</p></div>
+<div class="card"><img src="12.jpeg"><p>Learning process</p></div>
+<div class="card"><img src="13.jpeg"><p>Experiment results</p></div>
+<div class="card"><img src="14.jpeg"><p>Creative work</p></div>
+<div class="card"><img src="15.jpeg"><p>Final product</p></div>
+<div class="card"><img src="16.jpeg"><p>Presentation</p></div>
+
 </div>
-<div class="product">
-<img src="https://baskinnature.in/wp-content/uploads/2024/08/Pink.webp">
-<h3>Dell Laptop</h3>
-<p>800$</p>
-<button onclick="add(800)">Add to Cart</button>
+
 </div>
-<div class="product">
-<img src="https://swissbeauty.in/cdn/shop/files/SB-334_01StrawberrySlush_1.jpg?v=1748633094&width=620">
-<h3>Lenovo Laptop</h3>
-<p>650$</p>
-<button onclick="add(650)">Add to Cart</button>
-</div>
-</div>
-<script>
-let total=0;
-function add(price){ total+=price; document.getElementById("total").innerHTML=total; }
-</script>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Grade 6 Lip Blam Project | ICT Integration</p>
+
+</footer>
+
 </body>
+
 </html>
